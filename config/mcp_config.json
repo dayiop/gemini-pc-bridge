@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "browser-control": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "description": "Автоматизация веб-браузера: открытие сайтов, клики, скролл, скриншоты, формы"
+    },
+    "windows-pc": {
+      "command": "uvx",
+      "args": [
+        "windows-mcp",
+        "serve",
+        "--transport",
+        "stdio"
+      ],
+      "description": "Полный контроль Windows: мышь, хоткеи, запуск приложений, снятие скриншотов и PowerShell"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "."
+      ],
+      "description": "Управление файлами: чтение, редактирование, создание и поиск в рабочей директории"
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "description": "Прямая загрузка веб-страниц и конвертация контента в читаемый Markdown"
+    }
+  }
+}
